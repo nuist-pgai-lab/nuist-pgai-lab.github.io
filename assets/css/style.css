@@ -58,6 +58,14 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; justify-content: center;
   letter-spacing: 0.5px;
 }
+.brand .logo-img {
+  width: 40px; height: 40px; border-radius: 9px; object-fit: contain;
+  background: #f5f7fa; flex: none;
+}
+.footer-logo {
+  height: 46px; width: auto; border-radius: 8px; margin-bottom: 10px;
+  background: #f5f7fa; display: block;
+}
 .brand .brand-text { line-height: 1.2; }
 .brand .brand-name { font-size: 16px; font-weight: 700; letter-spacing: 0.3px; }
 .brand .brand-sub { font-size: 11.5px; opacity: 0.75; }
