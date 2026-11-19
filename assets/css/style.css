@@ -145,6 +145,22 @@ section.block + section.block { border-top: 1px solid var(--line); }
 .stat .num small { font-size: 15px; font-weight: 600; }
 .stat .label { font-size: 13.5px; color: var(--ink-soft); margin-top: 4px; }
 
+/* ---------- Intro & research cards ---------- */
+.intro-lead {
+  font-size: 15.5px; color: var(--ink); line-height: 1.95;
+  margin-bottom: 28px; text-align: justify;
+}
+.research-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.research-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 22px 16px 18px; text-align: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.research-card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(18, 71, 125, 0.14); }
+.research-card svg { width: 56px; height: 56px; margin: 0 auto 12px; display: block; }
+.research-card h3 { font-size: 15.5px; color: var(--blue-900); margin-bottom: 6px; }
+.research-card p { font-size: 12.5px; color: var(--ink-soft); line-height: 1.65; }
+
 /* ---------- Cards ---------- */
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .card {
@@ -253,6 +269,7 @@ section.block + section.block { border-top: 1px solid var(--line); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .research-grid { grid-template-columns: repeat(2, 1fr); }
   .main-nav {
     display: none; position: absolute; top: 64px; left: 0; right: 0;
     background: var(--blue-900); flex-direction: column; align-items: stretch;
