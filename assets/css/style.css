@@ -90,7 +90,10 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(120deg, var(--blue-900) 0%, var(--blue-700) 55%, var(--blue-600) 100%);
+  background:
+    linear-gradient(120deg, rgba(13, 47, 92, 0.88) 0%, rgba(18, 71, 125, 0.78) 55%, rgba(26, 86, 160, 0.66) 100%),
+    url("../img/campus-hero.jpg") center 62% / cover no-repeat;
+  background-color: var(--blue-900);
   color: #fff; padding: 72px 0 64px; position: relative; overflow: hidden;
 }
 .hero::after {
@@ -238,6 +241,9 @@ section.block + section.block { border-top: 1px solid var(--line); }
   font-size: 12.5px; color: rgba(255, 255, 255, 0.6);
 }
 .busuanzi-wrap span span { color: rgba(255, 255, 255, 0.85); font-weight: 600; }
+.photo-credit { margin-top: 10px; font-size: 12px; color: rgba(255, 255, 255, 0.45); }
+.photo-credit a { color: rgba(255, 255, 255, 0.6); }
+.photo-credit a:hover { color: rgba(255, 255, 255, 0.85); }
 
 /* ---------- Publications ---------- */
 .pub-group { margin: 30px 0 12px; font-size: 18px; font-weight: 700; color: var(--blue-900); }
@@ -284,6 +290,11 @@ section.block + section.block { border-top: 1px solid var(--line); }
   .main-nav.open { display: flex; }
   .nav-toggle { display: block; }
   .hero h1 { font-size: 27px; }
+  .hero {
+    background-image:
+      linear-gradient(120deg, rgba(13, 47, 92, 0.88) 0%, rgba(18, 71, 125, 0.78) 55%, rgba(26, 86, 160, 0.66) 100%),
+      url("../img/campus-hero-sm.jpg");
+  }
 }
 @media (max-width: 560px) {
   .card-grid, .team-grid, .stats { grid-template-columns: 1fr; }
